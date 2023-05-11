@@ -1,0 +1,16 @@
+.Input {
+  margin-bottom: 10px;
+}
+.Input form {
+  margin-bottom: 13px;
+}
+.Input button {
+  background-color: #d5ccff;
+  color: #2b1887;
+  border: none;
+  transition: all 0.5s 0.15s ease-in-out;
+}
+.Input button:hover {
+  color: #d5ccff;
+  background-color: #2b1887;
+}

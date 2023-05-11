@@ -9,7 +9,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { store } from "./store/configureStore";
 import { persistor } from "./store/configureStore";
 
-// import Layout from "./modules/Layout.module";
+import Layout from "./modules/Layout.module";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -20,7 +20,9 @@ function App() {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <div className="App">
-            <DndProvider backend={HTML5Backend}></DndProvider>
+            <DndProvider backend={HTML5Backend}>
+              <Layout />
+            </DndProvider>
           </div>
         </PersistGate>
       </Provider>

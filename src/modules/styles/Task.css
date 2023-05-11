@@ -1,0 +1,31 @@
+.Task {
+  background-color: #f4f2ff;
+  margin: 24px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.Task h4 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 31px;
+  color: black;
+}
+.Task p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 31px;
+}
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nickname {
+  padding: 2px 8px;
+
+  background-color: #e42c5f;
+  color: white;
+  border-radius: 10px;
+}
