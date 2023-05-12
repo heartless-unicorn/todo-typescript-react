@@ -50,6 +50,7 @@ export default function Input() {
           <Col>
             <Form.Control
               type="search"
+              data-testid="search"
               onChange={handleInput}
               placeholder="https://github.com/facebook/react"
             />
@@ -59,7 +60,11 @@ export default function Input() {
           </Col>
         </Row>
       </Form>
-      {error && <Alert variant="danger">Please enter the correct url</Alert>}
+      {error && (
+        <Alert variant="danger" data-testid="alert">
+          Please enter the correct url
+        </Alert>
+      )}
     </div>
   );
 }
